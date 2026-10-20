@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+
+    <div style="max-width: 300px; margin: 50px auto; padding: 20px; border: 1px solid #ccc;">
+        <h2>Login</h2>
+        
+        <!-- The form action points to where the data should be sent on submission -->
+        <form action="/login-endpoint" method="POST">
+            
+            <!-- Username Input -->
+            <p>
+                <label for="username">Username or Email:</label><br>
+                <input type="text" id="username" name="username" required placeholder="Enter username">
+            </p>
+            
+            <!-- Password Input -->
+            <p>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required placeholder="Enter password">
+            </p>
+            
+            <!-- Submit Button -->
+            <p>
+                <button type="submit">Log In</button>
+            </p>
+            
+        </form>
+    </div>
+
+</body>
+</html>
